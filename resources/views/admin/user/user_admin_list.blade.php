@@ -111,7 +111,7 @@
                 processing: true,
                 serverSide: true,
                 ajax: {
-                    url: '/dashboard/user/allUser',
+                    url: '/dashboard/user/allAdmin',
 
                 },
                 columns: [

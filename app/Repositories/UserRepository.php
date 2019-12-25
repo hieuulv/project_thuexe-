@@ -12,7 +12,7 @@ class UserRepository implements VehicelRepositoryInterface
 
     public function AllDatatable()
     {
-        return Datatables::of(User::all())
+        return Datatables::of(User::where('role', '!=' , 10))
             ->addColumn('action', function ($user) {
                 return '<a href="' . route('user_edit', $user->id) . '" class="btn btn-link btn-info btn-just-icon edit">
                                 <i class="material-icons">edit</i>

@@ -104,11 +104,19 @@
                                     <div class="col-sm-9">
                                         <div class="form-check-inline col-form-label">
                                             <label class="form-check-label">
-                                                <input type="radio" checked class="form-check-input" name="role" value="9">
+                                                <input type="radio" @if($user->role == 9) checked @endif class="form-check-input" name="role" value="9">
                                                 Admin
                                             </label>
                                         </div>
+
+                                        <div class="form-check-inline col-form-label">
+                                            <label class="form-check-label">
+                                                <input type="radio" @if($user->role == 8) checked @endif class="form-check-input" name="role" value="8">
+                                                Kiểm duyệt viên
+                                            </label>
+                                        </div>
                                     </div>
+
                                 </div>
 
                                 <button type="submit" class="btn btn-success pull-right">Sửa Profile</button>

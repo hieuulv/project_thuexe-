@@ -134,6 +134,13 @@
                                                 Admin
                                             </label>
                                         </div>
+
+                                        <div class="form-check-inline col-form-label">
+                                            <label class="form-check-label">
+                                                <input type="radio" class="form-check-input" name="role" value="8">
+                                                Kiểm duyệt viên
+                                            </label>
+                                        </div>
                                     </div>
                                 </div>
 
